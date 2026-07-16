@@ -1,3 +1,9 @@
+# packedvec 2.0.0 (2026-07-16)
+
+* Move from (the unmaintained) `bincode` to `wincode`. The associated feature
+  name has also been renamed to `wincode`.
+
+
 # packedvec 1.2.5 (2025-03-17)
 
 * Add an optional bincode dependency, which can be used as an alternative to

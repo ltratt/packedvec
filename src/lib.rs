@@ -10,7 +10,7 @@ extern crate num_traits;
 #[macro_use]
 extern crate serde;
 
-#[cfg(feature = "bincode")]
+#[cfg(feature = "wincode")]
 #[macro_use]
 extern crate wincode;
 
@@ -55,7 +55,7 @@ use std::{
 /// superior.
 #[derive(Clone, Debug)]
 #[cfg_attr(feature = "serde", derive(Serialize, Deserialize))]
-#[cfg_attr(feature = "bincode", derive(SchemaRead, SchemaWrite))]
+#[cfg_attr(feature = "wincode", derive(SchemaRead, SchemaWrite))]
 pub struct PackedVec<T, StorageT = usize> {
     len: usize,
     bits: Vec<StorageT>,
