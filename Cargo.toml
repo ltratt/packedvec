@@ -17,4 +17,4 @@ wincode = { version="0.5.5", features=["derive"], optional=true }
 rand = "0.3"
 
 [features]
-bincode = ["dep:wincode"]
+wincode = ["dep:wincode"]
